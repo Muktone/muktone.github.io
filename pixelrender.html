@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Voxel Space project demonstration</title>
+    <title>Muktone Proto | Pixel Render</title>
     <meta charset="UTF-8">
     <meta name="description" content="Demonstration of the Voxel Space technique">
     <meta name="author" content="Sebastian Macke">
@@ -474,7 +474,7 @@ function DownloadImagesAsync(urls) {
 function LoadMap(filenames)
 {
     var files = filenames.split(";");
-    DownloadImagesAsync(["maps/"+files[0]+".png", "maps/"+files[1]+".png"]).then(OnLoadedImages);
+    DownloadImagesAsync(["https://s-macke.github.io/VoxelSpace/maps/"+files[0]+".png", "https://s-macke.github.io/VoxelSpace/maps/"+files[1]+".png"]).then(OnLoadedImages);
 }
 
 function OnLoadedImages(result)
