@@ -81,7 +81,7 @@
 <label for="distancerange">Distance</label>
 <input id="distancerange" type="range" min="100" max="2000" step="1" onchange="camera.distance = this.value">
 
-<a href="/">Muktone Engine v0.0.0.1 Early Prototype</a>
+<a href="/pixelrender.html">Muktone Engine v0.0.0.1 Early Prototype</a>
 
 </div>
 
@@ -474,7 +474,7 @@ function DownloadImagesAsync(urls) {
 function LoadMap(filenames)
 {
     var files = filenames.split(";");
-    DownloadImagesAsync(["https://s-macke.github.io/VoxelSpace/maps/"+files[0]+".png", "https://s-macke.github.io/VoxelSpace/maps/"+files[1]+".png"]).then(OnLoadedImages);
+    DownloadImagesAsync(["https://s-macke.github.io/maps/"+files[0]+".png", "https://s-macke.github.io/maps/"+files[1]+".png"]).then(OnLoadedImages);
 }
 
 function OnLoadedImages(result)
